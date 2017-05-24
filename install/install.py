@@ -33,7 +33,7 @@ class Install():
     def install_os_tools(self):
         install_file = open(self.os_install_tools, "r")
         for i in install_file.readlines():
-            self.run_command("sudo apt-get install " + i)
+            self.run_command("sudo apt-get install -y " + i)
 
 
 def main():
